@@ -1,13 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <title>Adult Content</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Button</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #ff0000;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #cc0000;
+            transform: scale(1.05);
+        }
+    </style>
 </head>
 <body>
-    <h2>Don't click on this link if you are under 18</h2>
-    <a href="https://www.pornhub.com/" target="_blank">
-  Click on the link and enjoy the adult content!!
-</a>
+
+    <a href="https://www.pornhub.com/" target="_blank" class="btn">
+        Open link
+    </a>
+
 </body>
 </html>
