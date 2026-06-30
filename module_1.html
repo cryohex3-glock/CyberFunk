@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Module 1 - Introduction to HTML</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: Arial, sans-serif; background: #f0f4f8; color: #333;}
+        header { background: #1a3c6e; color: white; padding: 20px 40px; }
+        header h1 { font-size: 2rem; }
+        header p { color:#aac4e8; margin-top: 6px; }
+        nav { background: #2d5da6; padding: 12px 40px; }
+        nav a { color: white; text-decoration: none; margin-right: 20px; font-size: 0.95rem; }
+        nav a:hover { text-decoration: underline; }
+        main {max-width: 900px; margin-bottom: 40px auto; padding: 0 20px;}
+        h2 {color: #1a3c6e; margin-bottom: 16px;}
+        h3 {color: #2d5da6; margin: 24px 0 10px;}
+        p { line-height: 1.7; margin-bottom: 14px; color: #555;}
+        ul, ol { margin-left: 24px; margin-bottom: 16px; line-height: 1.8; color: #555;}
+        .img-box { text-align: center; margin: 24px 0;}
+        .img-box img { max-width: 100%; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);}
+        .img-box p {font-size: 0.85rem; color: #888; margin-top: 6px;}
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);}
+        th { background: #2d5da6; color: white; padding: 12px 16px; text-align: left; }
+        td { padding: 10px 16px; border-bottom: 1px solid #e0e8f0; }
+        tr:last-child td { border-bottom: none; }
+        tr:nth-child(even) { background: #f5f8fc; }
+        .audio-section { background: white; border-radius: 8px; padding: 20px 24px; margin: 24px 0; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);}
+        footer { text-align: center; padding: 20px; background: #1a3c6e; color: #aac4e8; margin-top: 60px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Module 1: Introduction to HTML</h1>
+        <p>Web Programming Course</p>
+    </header>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/module1">Module 1</a>
+        <a href="/module2">Module 2</a>
+        <a href="/module3">Module 3</a>
+        <a href="/contact">Contact</a>
+    </nav>
+    <main>
+        <h2>What is HTML?</h2>
+        <p>
+            "HTML (HyperText Markup Language) is the standard markup language used to create web pages. It describes the structure of a web page sing a series of elements represented by tags. HTML is the skeleton of every website on the internet."
+        </p>
+        <div class="img-box">
+            <img src="images/module_1img.png" alt="HTML Structure Diagram" width="600">
+            <p>Figure 1: Basic Structure of an HTML Document</p>
+        </div>
+        <h3>Learning Objectives</h3>
+        <p>By the end of this module, you will be able to:</p>
+        <ol>
+            <li>
+                ::marker
+                Understand the basic structure of an HTML document
+            </li>
+            <li>
+                ::marker
+                Learn about common HTML tags and their usage
+            </li>
+            <li>
+                ::marker
+                Gain hands-on experience in creating a simple web page
+            </li>
+            <li>
+                ::marker
+                Understand the importance of semantic HTML
+            </li>
+        </ol>
+        <h3>
+            Core HTML Elements
+        </h3>
+        <p>
+            HTML uses tags enclosed in angle brackets to define elements. Most elements have an opening and a closing tag. Here are the most important ones:
+        </p>
+        <ul>
+          <li>
+            ::marker
+            <strong>&lt;html&gt;</strong>
+            " -Root element of an HTML page."
+          </li>
+            <li>
+                ::marker
+                <strong>&lt;head&gt;</strong>
+                " -Contains meta-information about the document, such as title and links to stylesheets."
+            </li>
+            <li>
+                ::marker
+                <strong>&lt;title&gt;</strong>
+                " -Defines the title of the document, shown in the browser's title bar or tab."
+            </li>
+            <li>
+                ::marker
+                <strong>&lt;body&gt;</strong>
+                " -Contains the content of the document, such as text, images, and links."
+            </li>
+            <li>
+                ::marker
+                <strong>&lt;h1&gt; to &lt;h6&gt;</strong>
+                " -Heading tags, where &lt;h1&gt; is the highest level and &lt;h6&gt; is the lowest."
+            </li>
+            <li>
+                ::marker
+                <strong>&lt;p&gt;</strong>
+                " -Defines a paragraph of text."
+            </li>
+            <li>
+                ::marker
+                <strong>&lt;a&gt;</strong>
+                " -Defines a hyperlink to another page or resource."
+            </li>
+            <li>
+                ::marker
+                <strong>&lt;img&gt;</strong>
+                " -Embeds an image in the document."
+            </li>
+            <li>
+                ::marker
+                <strong>&lt;ul&gt;</strong>
+                " -Defines an unordered list."
+            </li>
+            <li>
+                ::marker
+                <strong>&lt;ol&gt;</strong>
+                " -Defines an ordered list."
+            </li>
+            <li>
+                ::marker
+                <strong>&lt;li&gt;</strong>
+                " -Defines a list item."
+            </li>
+            <li>
+                ::marker
+                <strong>&lt;div&gt;</strong>
+                " -Defines a division or section in the document, often used for layout purposes."
+            </li>
+            <li>
+                ::marker
+                <strong>&lt;span&gt;</strong>
+                " -Defines a small section of text, often used for styling purposes."
+            </li>
+        </ul>
+        <h3>HTML Document Structure </h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Element</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>&lt;html&gt;</td>
+                    <td>Root element of an HTML page.</td>
+                </tr>
+                <tr>
+                    <td>&lt;head&gt;</td>
+                    <td>Contains meta-information about the document, such as title and links to stylesheets.</td>
+                </tr>
+                <tr>
+                    <td>&lt;title&gt;</td>
+                    <td>Defines the title of the document, shown in the browser's title bar or tab.</td>
+                </tr>
+                <tr>
+                    <td>&lt;body&gt;</td>
+                    <td>Contains the content of the document, such as text, images, and links.</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="audio-section">
+            <h3>Audio Explanation</h3>
+            <audio controls>
+                <source src="C:\Users\Administrator\Documents\Christopher Robinhood\images\audio\audio_2026-06-21_23-07-24.ogg" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+    </main>
+    <footer>
+        <p>&copy; 2024 Web Programming Course. All rights reserved.</p>
+</body>
+</html>

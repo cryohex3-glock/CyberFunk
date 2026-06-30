@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />  
+    <title>Module 2 - Introduction to CSS</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: Arial, sans-serif; background: #f0f4f8; color: #333;}
+        header { background: #1a3c6e; color: white; padding: 20px 40px; }
+        header h1 { font-size: 2rem; }
+        header p { color:#aac4e8; margin-top: 6px; }
+        nav { background: #2d5da6; padding: 12px 40px; }
+        nav a { color: white; text-decoration: none; margin-right: 20px; font-size: 0.95rem; }
+        nav a:hover { text-decoration: underline; }
+        main {max-width: 900px; margin-bottom: 40px auto; padding: 0 20px;}
+        h2 {color: #1a3c6e; margin-bottom: 16px;}
+        h3 {color: #2d5da6; margin: 24px 0 10px;}
+        p { line-height: 1.7; margin-bottom: 14px; color: #555;}
+        ul, ol { margin-left: 24px; margin-bottom: 16px; line-height: 1.8; color: #555;}
+        .img-box { text-align: center; margin: 24px 0;}
+        .img-box img { max-width: 100%; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);}
+        .img-box p {font-size: 0.85rem; color: #888; margin-top: 6px;}
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);}
+        th { background: #2d5da6; color: white; padding: 12px 16px; text-align: left; }
+        td { padding: 10px 16px; border-bottom: 1px solid #e0e8f0; }
+        tr:last-child td { border-bottom: none; }
+        tr:nth-child(even) td { background: #f5f8fc; }
+        .color-swatches { display: flex; gap: 12px; margin: 16px 0; }
+        .swatch { width: 80px; height: 60px; border-radius: 6px; display: flex; align-items: center; justify-content: center; color: white; font-size: 0.75rem; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); font-weight: bold;} 
+        footer { text-align:center; padding: 20px; background: #1a3c6e; color: #aac4e8; margin-top: 60px; }
+    </style>
+</head>
+<body>
+   <header>
+       <h1>Module 2: Introduction to CSS</h1>
+       <p>Web Programming Course</p>
+   </header>
+   <nav>
+         <a href="/">Home</a>
+         <a href="/module_1.html">Module 1</a>
+         <a href="/module_2.html">Module 2</a>
+         <a href="/module_3.html">Module 3</a>
+         <a href="/contact.html">Contact</a>
+   </nav>
+   <main>
+       <h2>What is CSS?</h2>
+       <p>
+           "CSS (Cascading Style Sheets) is a stylesheet language used to describe the presentation of a document written in HTML. CSS controls the layout, colors, fonts, and overall visual appearance of web pages. It allows developers to create visually appealing and responsive designs."
+       </p>
+       <div class="img-box">
+           <img src="images/module_2img.png" alt="CSS Example Diagram" width="600">
+           <p>Figure 1: Example of CSS Styling</p>
+       </div>
+       <h3>Learning Objectives</h3>
+       <p>By the end of this module, you will be able to:</p>
+       <ol>
+           <li>Understand the role of CSS in web development.</li>
+           <li>Apply basic CSS properties to style HTML elements.</li>
+           <li>Create responsive layouts using CSS techniques.</li>
+       </ol>
+       <h3>Ways to Apply CSS</h3>
+       <ul>
+           <li>
+            ::marker
+            <strong>Inline CSS:</strong>
+             Apply styles directly to HTML elements using the <code>style</code>attribute.
+           </li>
+           <li>
+            ::marker
+             <strong>Internal CSS</strong>: Define styles within a <code>&lt;style&gt;</code> tag in the <code>&lt;head&gt;</code> section of the HTML document.
+           </li>
+           <li>
+            ::marker
+            <strong>External CSS:</strong> Link to an external CSS file using the <code>&lt;link&gt;</code> tag.
+           </li>
+       </ul>
+       <h3>CSS Color Examples</h3>
+       <div class="color-swatches">
+           <div class="swatch" style="background-color: #ff0000;">Red</div>
+           <div class="swatch" style="background-color: #00ff00;">Green</div>
+           <div class="swatch" style="background-color: #0000ff;">Blue</div>
+       </div>
+       <h3>CSS Properties Reference</h3>
+       <table>
+           <thead>
+               <tr>
+                   <th>Property</th>
+                   <th>Description</th>
+               </tr>
+           </thead>
+           <tbody>
+               <tr>
+                   <td><code>color</code></td>
+                   <td>Sets the text color of an element.</td>
+               </tr>
+               <tr>
+                   <td><code>background-color</code></td>
+                   <td>Sets the background color of an element.</td>
+               </tr>
+               <tr>
+                   <td><code>font-size</code></td>
+                   <td>Sets the font size of text.</td>
+               </tr>
+               <tr>
+                   <td><code>margin</code></td>
+                   <td>Sets the margin area on all sides of an element.</td>
+               </tr>
+               <tr>
+                   <td><code>padding</code></td>
+                   <td>Sets the padding area on all sides of an element.</td>
+               </tr>
+           </tbody>
+        </table>
+   </main>
+   <footer>
+       <p>&copy; 2024 Web Programming Course. All rights reserved.</p>
+   </footer>
+</body>
+</html>

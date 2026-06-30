@@ -1,0 +1,194 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 3 – HTML Forms &amp; Tables</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: Arial, sans-serif; background: #f0f4f8; color: #333; }
+        header { background: #1a3c6e; color: white; padding: 20px 40px; }
+        header h1 { font-size: 2rem; }
+        header p { margin-top: 6px; color: #aac4e8; }
+        nav { background: #2d5da6; padding: 12px 40px; }
+        nav a { color: white; text-decoration: none; margin-right: 20px; font-size: 0.95rem; }
+        nav a:hover { text-decoration: underline; }
+        main { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+        h2 { color: #1a3c6e; margin-bottom: 16px; }
+        h3 { color: #2d5da6; margin: 24px 0 10px; }
+        p { line-height: 1.7; margin-bottom: 14px; color: #555; }
+        ul, ol { margin-left: 24px; margin-bottom: 16px; line-height: 1.8; color: #555; }
+        .img-box { text-align: center; margin: 24px 0; }
+        .img-box img { max-width: 100%; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.15); }
+        .img-box p { font-size: 0.85rem; color: #888; margin-top: 6px; }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+        th { background: #2d5da6; color: white; padding: 12px 16px; text-align: left; }
+        td { padding: 10px 16px; border-bottom: 1px solid #e0e8f0; }
+        tr:last-child td { border-bottom: none; }
+        tr:nth-child(even) td { background: #f5f8fc; }
+        .demo-form { background: white; border-radius: 8px; padding: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); max-width: 500px; margin: 20px 0; }
+        .demo-form label { display: block; margin-bottom: 4px; font-weight: bold; font-size: 0.9rem; color: #444; }
+        .demo-form input, .demo-form select { width: 100%; padding: 8px 12px; border: 1px solid #ccd; border-radius: 4px; margin-bottom: 14px; font-size: 0.95rem; }
+        .demo-form button { background: #2d5da6; color: white; border: none; padding: 10px 24px; border-radius: 4px; cursor: pointer; font-size: 0.95rem; }
+        footer { text-align: center; padding: 20px; background: #1a3c6e; color: #aac4e8; margin-top: 60px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Module 3: HTML Forms &amp; Tables</h1>
+    <p>Web Programming Course</p>
+</header>
+
+<nav>
+    <a href="/">Home</a>
+    <a href="/module1">Module 1</a>
+    <a href="/module2">Module 2</a>
+    <a href="/module3">Module 3</a>
+    <a href="/contact">Contact</a>
+</nav>
+
+<main>
+
+    <h2>HTML Tables</h2>
+    <p>Tables in HTML are used to display structured data in rows and columns. They are created using a set of related tags: <code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;th&gt;</code>, and <code>&lt;td&gt;</code>.</p>
+
+    <div class="img-box">
+        <img src="images/module_3img.png" alt="HTML Forms and Tables" width="600">
+        <p>Figure 3: HTML tables and forms used in a web application</p>
+    </div>
+
+    <h3>Table Tags Explained</h3>
+    <ul>
+        <li><strong>&lt;table&gt;</strong> – Wraps the entire table</li>
+        <li><strong>&lt;thead&gt;</strong> – Groups the header rows of the table</li>
+        <li><strong>&lt;tbody&gt;</strong> – Groups the body content rows</li>
+        <li><strong>&lt;tr&gt;</strong> – Defines a table row</li>
+        <li><strong>&lt;th&gt;</strong> – Defines a header cell (bold and centered by default)</li>
+        <li><strong>&lt;td&gt;</strong> – Defines a standard data cell</li>
+        <li><strong>colspan / rowspan</strong> – Attributes to merge cells across columns or rows</li>
+    </ul>
+
+    <h3>Student Grade Table (Example)</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Student Name</th>
+                <th>Assignment 1</th>
+                <th>Assignment 2</th>
+                <th>Exam</th>
+                <th>Total (%)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Alice Johnson</td>
+                <td>18/20</td>
+                <td>17/20</td>
+                <td>72/100</td>
+                <td>85%</td>
+            </tr>
+            <tr>
+                <td>Bob Smith</td>
+                <td>15/20</td>
+                <td>19/20</td>
+                <td>68/100</td>
+                <td>80%</td>
+            </tr>
+            <tr>
+                <td>Clara Osei</td>
+                <td>20/20</td>
+                <td>20/20</td>
+                <td>90/100</td>
+                <td>97%</td>
+            </tr>
+            <tr>
+                <td>David Mensah</td>
+                <td>12/20</td>
+                <td>14/20</td>
+                <td>55/100</td>
+                <td>68%</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>HTML Forms</h2>
+    <p>Forms allow users to input data that is submitted to a server for processing. A form contains form elements such as text fields, checkboxes, radio buttons, and submit buttons, all wrapped in a <code>&lt;form&gt;</code> tag.</p>
+
+    <h3>Common Form Input Types</h3>
+    <ol>
+        <li><strong>text</strong> – Single-line text input</li>
+        <li><strong>email</strong> – Email address input with built-in validation</li>
+        <li><strong>password</strong> – Masked text input</li>
+        <li><strong>number</strong> – Numeric input</li>
+        <li><strong>tel</strong> – Telephone number input</li>
+        <li><strong>radio</strong> – Select one option from a group</li>
+        <li><strong>checkbox</strong> – Toggle one or more options</li>
+        <li><strong>select</strong> – Dropdown list</li>
+        <li><strong>textarea</strong> – Multi-line text input</li>
+        <li><strong>submit</strong> – Button to submit the form</li>
+    </ol>
+
+    <h3>Sample Form</h3>
+    <div class="demo-form">
+        <form>
+            <label for="fname">Full Name</label>
+            <input type="text" id="fname" name="fname" placeholder="Enter your full name">
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com">
+
+            <label for="course">Select Course</label>
+            <select id="course" name="course">
+                <option value="">-- Choose a course --</option>
+                <option value="web">Web Programming</option>
+                <option value="db">Database Management</option>
+                <option value="net">Computer Networks</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <h3>Form Attributes Reference</h3>
+    <table>
+        <tbody><tr>
+            <th>Attribute</th>
+            <th>Used On</th>
+            <th>Purpose</th>
+        </tr>
+        <tr>
+            <td>action</td>
+            <td>&lt;form&gt;</td>
+            <td>URL where the form data is sent on submission</td>
+        </tr>
+        <tr>
+            <td>method</td>
+            <td>&lt;form&gt;</td>
+            <td>HTTP method: GET or POST</td>
+        </tr>
+        <tr>
+            <td>name</td>
+            <td>&lt;input&gt;</td>
+            <td>Identifies the field when data is submitted</td>
+        </tr>
+        <tr>
+            <td>placeholder</td>
+            <td>&lt;input&gt;</td>
+            <td>Hint text shown when the field is empty</td>
+        </tr>
+        <tr>
+            <td>required</td>
+            <td>&lt;input&gt;</td>
+            <td>Makes the field mandatory before submission</td>
+        </tr>
+        <tr>
+            <td>type</td>
+            <td>&lt;input&gt;</td>
+            <td>Specifies the kind of input (text, email, password, etc.)</td>
+        </tr>
+    </tbody></table>
+
+</main>
+
+<footer>
+    <p>© 2024 Web Programming Course. All rights reserved.</p>
+</footer>

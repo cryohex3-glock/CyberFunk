@@ -1,0 +1,112 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact – Web Programming Course</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: Arial, sans-serif; background: #f0f4f8; color: #333; }
+        header { background: #1a3c6e; color: white; padding: 20px 40px; }
+        header h1 { font-size: 2rem; }
+        header p { margin-top: 6px; color: #aac4e8; }
+        nav { background: #2d5da6; padding: 12px 40px; }
+        nav a { color: white; text-decoration: none; margin-right: 20px; font-size: 0.95rem; }
+        nav a:hover { text-decoration: underline; }
+        main { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+        h2 { color: #1a3c6e; margin-bottom: 16px; }
+        h3 { color: #2d5da6; margin: 24px 0 10px; }
+        p { line-height: 1.7; margin-bottom: 14px; color: #555; }
+        .info-card { background: white; border-radius: 8px; padding: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-bottom: 30px; border-left: 5px solid #2d5da6; }
+        .info-card table { width: auto; background: none; box-shadow: none; }
+        .info-card table td { padding: 8px 16px 8px 0; border: none; color: #333; }
+        .info-card table td:first-child { font-weight: bold; color: #1a3c6e; white-space: nowrap; }
+        .contact-form { background: white; border-radius: 8px; padding: 30px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+        .form-group { margin-bottom: 18px; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; font-size: 0.9rem; color: #444; }
+        input[type="text"],
+        input[type="tel"],
+        textarea { width: 100%; padding: 10px 14px; border: 1px solid #ccd; border-radius: 5px; font-size: 0.95rem; font-family: Arial, sans-serif; transition: border-color 0.2s; }
+        input[type="text"]:focus,
+        input[type="tel"]:focus,
+        textarea:focus { outline: none; border-color: #2d5da6; }
+        textarea { resize: vertical; min-height: 120px; }
+        .submit-btn { background: #2d5da6; color: white; border: none; padding: 12px 32px; border-radius: 5px; cursor: pointer; font-size: 1rem; width: 100%; margin-top: 6px; }
+        .submit-btn:hover { background: #1a3c6e; }
+        footer { text-align: center; padding: 20px; background: #1a3c6e; color: #aac4e8; margin-top: 60px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Contact Us</h1>
+    <p>Web Programming Course</p>
+</header>
+
+<nav>
+    <a href="/">Home</a>
+    <a href="/module1">Module 1</a>
+    <a href="/module2">Module 2</a>
+    <a href="/module3">Module 3</a>
+    <a href="/contact">Contact</a>
+</nav>
+
+<main>
+
+    <h2>Course Instructor Information</h2>
+    <div class="info-card">
+        <table>
+            <tbody><tr>
+                <td>Name:</td>
+                <td>Ogwuche Chris Peter</td>
+            </tr>
+            <tr>
+                <td>Registration Number:</td>
+                <td>25/CO/IS/013</td>
+            </tr>
+            <tr>
+                <td>Department:</td>
+                <td>Information Systems &amp; Information Technology</td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+
+    <h2>Send a Message</h2>
+    <p>Use the form below to get in touch. All fields marked with <strong>*</strong> are required.</p>
+
+    <div class="contact-form">
+        <form action="#" method="POST">
+
+            <div class="form-group">
+                <label for="visitor-name">Visitor's Name *</label>
+                <input type="text" id="visitor-name" name="visitor_name" placeholder="Enter your full name" required="">
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" placeholder="+233 20 000 0000" required="">
+            </div>
+
+            <div class="form-group">
+                <label for="subject">Subject *</label>
+                <input type="text" id="subject" name="subject" placeholder="What is your message about?" required="">
+            </div>
+
+            <div class="form-group">
+                <label for="comments">Comments *</label>
+                <textarea id="comments" name="comments" placeholder="Write your message here..." required=""></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit Message</button>
+
+        </form>
+    </div>
+
+</main>
+
+<footer>
+    <p>© 2024 Web Programming Course. All rights reserved.</p>
+</footer>
+
+
+
+</body></html>
